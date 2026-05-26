@@ -17,6 +17,8 @@ namespace GuessingNum
         public Form1()
         {
             InitializeComponent();
+            btnCheck.Enabled = false;
+            btnAns.Enabled = false;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -28,6 +30,8 @@ namespace GuessingNum
             listBox1.Items.Clear();
             textBox1.Clear();
             listBox1.Items.Add("遊戲開始！請輸入4個數字");
+            btnCheck.Enabled = true;
+            btnAns.Enabled = true;
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
